@@ -21,9 +21,9 @@ class UserProgressService with ChangeNotifier {
   int get quizzesCompleted => _quizzesCompleted;
 
   String get levelName {
-    if (_points >= 700) return 'Спортивный Эксперт';
-    if (_points >= 300) return 'Любитель';
-    return 'Новичок';
+    if (_points >= 700) return 'Sports Expert';
+    if (_points >= 300) return 'Intermediate';
+    return 'Novice';
   }
 
   int get levelNumber {

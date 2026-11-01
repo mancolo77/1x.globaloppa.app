@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import '../services/local_notification_service.dart';
 import '../theme/app_theme.dart';
 import 'tabs/matches_tab.dart';
 import 'tabs/tournaments_tab.dart';
@@ -24,9 +23,6 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
   void initState() {
     super.initState();
     _currentIndex = widget.initialIndex;
-    WidgetsBinding.instance.addPostFrameCallback((_) {
-      LocalNotificationService.instance.requestPermission();
-    });
   }
 
   @override
@@ -48,11 +44,10 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
           selectedItemColor: AppTheme.textLight,
           unselectedItemColor: AppTheme.border,
           type: BottomNavigationBarType.fixed,
-          elevation: 0,
           items: const [
-            BottomNavigationBarItem(icon: Icon(Icons.sports_soccer), label: 'Matches'),
-            BottomNavigationBarItem(icon: Icon(Icons.emoji_events), label: 'Tournaments'),
-            BottomNavigationBarItem(icon: Icon(Icons.bookmark), label: 'Favorites'),
+            BottomNavigationBarItem(icon: Icon(Icons.sports_soccer_rounded), label: 'Matches'),
+            BottomNavigationBarItem(icon: Icon(Icons.emoji_events_rounded), label: 'Tournaments'),
+            BottomNavigationBarItem(icon: Icon(Icons.star_rounded), label: 'Favorites'),
           ],
         ),
       ),

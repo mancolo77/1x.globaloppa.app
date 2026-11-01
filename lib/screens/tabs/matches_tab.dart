@@ -9,7 +9,6 @@ class MatchesTab extends StatefulWidget {
 
 class _MatchesTabState extends State<MatchesTab> {
   String _sport = 'Football';
-  String _filter = 'All';
 
   final List<Map<String, dynamic>> _items = [
     {'sport': 'Football', 'tour': 'Champions League', 'a': 'Real Madrid', 'b': 'Bayern Munich', 'score': '2 : 2', 'status': 'LIVE 74\'', 'live': true},
