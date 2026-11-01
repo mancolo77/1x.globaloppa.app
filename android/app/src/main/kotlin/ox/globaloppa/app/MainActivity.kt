@@ -1,4 +1,4 @@
-package 1x.globaloppa.app
+package ox.globaloppa.app
 
 import io.flutter.embedding.android.FlutterActivity
 
