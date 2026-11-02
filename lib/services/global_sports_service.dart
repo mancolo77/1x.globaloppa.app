@@ -304,3 +304,4 @@ class GlobalSportsService with ChangeNotifier {
     notifyListeners();
   }
 }
+
